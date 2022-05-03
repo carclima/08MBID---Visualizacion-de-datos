@@ -1,33 +1,83 @@
 <div class="w3-card-4">
-  <header class="w3-container w3-blue">
-    <h1>08MBID - Trabajo práctico</h1>
-  </header>
+  <div class="w3-container w3-blue">
+    <h1>08MBID - Visualización de datos</h1>
+  </div>
 
   <div class="w3-container">
-    <p><b>Nombre:</b> Carlos Climent Martínez</p>
+    <h2>Datos del trabajo</h2>
+    <ul class="w3-ul">
+      <li><b>Nombre:</b> Carlos Climent Martínez</li>
+      <li>
+        <b>URL:</b>
+        <a href="https://js-scoirr.stackblitz.io"
+          >https://js-scoirr.stackblitz.io</a
+        >
+      </li>
+      <li>
+        <b>GitHub:</b>
+        <a href="https://github.com/carclima/08MBID---Visualizacion-de-datos"
+          >https://github.com/carclima/08MBID---Visualizacion-de-datos</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="w3-container">
+    <h2>Introducción y contexto</h2>
     <p>
-      <b>URL:</b>
-      <a href="https://js-scoirr.stackblitz.io"
-        >https://js-scoirr.stackblitz.io</a
-      >
+      El presente trabajo se ha realizado a partir de los datos usados en las
+      asignaturas <b>05MBID - Minería de datos</b> y
+      <b>06MBID - Estadística avanzada</b>. Se trata de un conjunto de datos
+      obtenidos de <b>"Dades Obertes"</b> de la Generalitat Valenciana con los
+      resultados de las elecciones autonómicas valencianas desde 1987 hasta las
+      últimas en 2019. En el análisis inicial, los objetivos fueron la obtención
+      de mesas electorales representativas y la identificación de datos
+      socioeconómicos y sociodemográficos que pudieran influenciar en la
+      tendencia de voto.
     </p>
     <p>
-      <b>GitHub:</b>
-      <a href="https://github.com/carclima/08MBID---Visualizacion-de-datos"
-        >https://github.com/carclima/08MBID---Visualizacion-de-datos</a
-      >
+      Además, se trató de encontrar relación entre los porcentajes de abstención
+      en las mesas electorales con el resultado de los votos. En esta ocasión
+      nos centramos en mostrar a partir de los datos segmentados por mesa
+      electoral, los datos agrupados por partido, año de elecciones y partido
+      político.
+    </p>
+    <p>
+      La audiencia en este caso es la población general, con gráficos
+      perfectamente inteligibles por cualquier persona. Se trata de realizar
+      análisis simples y que den una idea del sentido histórico del voto en las
+      elecciones autonómicas valencianas.
+    </p>
+    <p>
+      El presente documento ha sido realizado con las herramientas explicadas en
+      la asignatura stackblitz.com y para darle un poco de mejor aspecto
+      gráfico, la librería <b>w3c.css</b> (<a
+        href="https://www.w3schools.com/w3css/default.asp"
+        >https://www.w3schools.com/w3css/default.asp</a
+      >). Es una librería muy liviana con la que con muy pocos conocimientos de
+      programación web se pueden conseguir resultados muy agradables. Se trata
+      de una buena alternativa a <b>Bootstrap</b>.
+    </p>
+    <p>
+      Los gráficos que podremos ver a continuación han sido realizados usando
+      tanto Google Sheets como Power BI Desktop. En ellos primero nos centramos
+      en el bipartidismo, hecho que ha centrado la mayor parte del sentido del
+      voto en España desde mediados o finales de los años 80, una vez UCD
+      desaparece o queda con su marca que pasó a ser residual CDS, hasta la
+      aparición de los nuevos partidos Podemos, Cs y más recientemente Vox.
+      Luego hacemos un análisis clásico de evolución del voto de todos los
+      partidos que han sido importantes a nivel autonómico y además mostramos
+      esta evolución agrupando por los grandes bloques ideológicos de izquierda
+      y derecha.
     </p>
   </div>
-</div>
-<div class="w3-card-4">
-  <div class="w3-bar">
+  <div class="w3-container">
     <h2>Análisis del bipartidismo</h2>
     <p>
-      Este siguiente gráfico está realizado en Google Sheets y lo que pretende
-      es mostrar mediante un gráfico de barras apilado el % de voto que
+      Este primer gráfico ha sido realizado con <b>Google Sheets</b> y lo que
+      pretende es mostrar mediante un gráfico de barras apilado el % de voto que
       obtuvieron los dos principales partidos históricos en España. Estos
       partidos han marcado un claro voto bipartidista durante casi 25 años,
-      desde principios de los 90, hasta la irrupción de Cs y Podemos en las
+      desde finales de los años 80, hasta la irrupción de Cs y Podemos en las
       elecciones autonómicas de 2015, fecha que marcó la salida del PP del
       gobierno valenciano y la entrada del Govern del Botànic.
     </p>
@@ -42,8 +92,8 @@
       ></iframe>
     </p>
     <p>
-      Entre los aspectos técnicos usados en este gráfico estaría el uso del
-      promedio para las series de ambos partidos, ya que al ser datos de la
+      Entre los aspectos técnicos usados en este gráfico cabe destacar el uso
+      del promedio para las series de ambos partidos, ya que al ser datos de la
       Comunidad Valenciana, se trata de elecciones con triple circunscripción.
       Mostramos los valores eliminando decimales y dejándolo únicamente en dos.
       Este gráfico nos aporta además una forma sencilla de comparar ambos
@@ -56,18 +106,13 @@
     </p>
     <p></p>
   </div>
-</div>
-<div class="w3-card-4">
-  <div class="w3-bar">
+  <div class="w3-container">
     <h2>Análisis la evolución de los resultados</h2>
     <p>
-      Este siguiente gráfico está realizado en PowerBI Desktop y lo que pretende
-      es mostrar mediante un gráfico de barras apilado el % de voto que
-      obtuvieron los dos principales partidos históricos en España. Estos
-      partidos han marcado un claro voto bipartidista durante casi 25 años,
-      desde principios de los 90, hasta la irrupción de Cs y Podemos en las
-      elecciones autonómicas de 2015, fecha que marcó la salida del PP del
-      gobierno valenciano y la entrada del Govern del Botànic.
+      Estos siguientes gráfico se han desarrollado mediante
+      <b>PowerBI Desktop</b> y lo que muestran es evolución, en un caso del voto
+      de los diferentes partidos políticos y en el otro de los grandes bloques
+      ideológicos históricos como son la izquierda y derecha.
     </p>
     <p>
       <iframe
@@ -80,18 +125,36 @@
       ></iframe>
     </p>
     <p>
-      Entre los aspectos técnicos usados en este gráfico estaría el uso del
-      promedio para las series de ambos partidos, ya que al ser datos de la
-      Comunidad Valenciana, se trata de elecciones con triple circunscripción.
-      Mostramos los valores eliminando decimales y dejándolo únicamente en dos.
-      Este gráfico nos aporta además una forma sencilla de comparar ambos
-      partidos y compararlos con el hueco que queda hasta el 100%, que sería el
-      espacio de votación del resto de partidos que se presentaron a las
-      elecciones. Los colores en este caso son también muy importantes, ya que
-      identifican de forma muy sencilla a quién pertenece cada dato. Además,
-      pensamos que ordenar por fecha de forma descendente puede ser interesante
-      ya que vemos de primeras los datos más recientes.
+      En el de evolución de voto por partidos políticos, se ha elegido el
+      gráfico de líneas con el año en el eje X para mostrar la evolución. Los
+      datos se agrupan ya que son de las tres provincias de la Comunidad
+      Valenciana, se muestran en porcentajes y hacemos que desaparezcan aquellos
+      partidos en las elecciones en las que no se presentaron, cambiando en la
+      herramienta el 0 por el null. Para este gráfico se buscan los colores de
+      los partidos, muy importantes, ya que identifican de forma muy sencilla a
+      quién pertenece cada dato.
     </p>
-    <p></p>
+    <p>
+      Para el gráfico de evolución ideológica optamos por usar uno de barras
+      apilado hasta el 100%, para evitar el valor RESTO que tenemos en el
+      anterior y así ver claramente los porcentajes a los bloques izquierda y
+      derecha. En esta misma herramienta Power BI Desktop creamos las columnas
+      IZQUIERDA y DERECHA que se usan luego para el gráfico. Los colores siguen
+      siendo muy importantes y aunque no son exactamente los mismos que
+      PSPV-PSOE y PP, sí que son muy similares. Como caso diferenciado, en lugar
+      de agrupar nuevamente las tres provincias, se divide el gráfico para poder
+      comprarar rápidamente si hay una significación por el lugar de procedencia
+      del votante.
+    </p>
+  </div>
+  <div class="w3-container">
+    <h2>Conclusiones y trabajo futuro</h2>
+    <p>
+      Los datos extraídos y graficados en este trabajo muestran claramente el
+      histórico del sentido del voto en las elecciones autonómicas valencianas
+      desde que recuperamos la democracia. Se aprecia la época de hegemonía que
+      tuyo el PP durante más de 20 años y el cambio a partir de 2015.
+    </p>
+    <p>A futuro se debería profundizar en los datos sociodemográficos y socioeconómicos para compararlos con los resultados y tratar de ver gráficamente qué relación hay entre ellos y cómo se comporta el voto según estos datos. Esta información puede darnos valor y con contenido gráfico adecuado pueden verse como buena medida para seguir analizando resultados políticos, trasladándolo a otras elecciones, circunscripciones, etc.</p>
   </div>
 </div>
